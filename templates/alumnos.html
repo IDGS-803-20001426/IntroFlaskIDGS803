@@ -3,8 +3,8 @@
 {%block content%}
     {% import "_macros.html" as macros %}
     <h1>Alumnos</h1>
-    <form action="" method="post">
-        {{macros.render_field(form.nombre)}}
+    <form action="" method="post" novalidate>
+        {{macros.render_field(form.nombre, class="form-controls")}}
         {{macros.render_field(form.apaterno)}}
         {{macros.render_field(form.amaterno)}}
         {{macros.render_field(form.edad)}}
