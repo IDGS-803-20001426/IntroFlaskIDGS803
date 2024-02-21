@@ -1,7 +1,8 @@
 {%extends "layout.html"%}
 
 {%block content%}
-    {% import "_macros.html" as macros %}
+{% import "_macros.html" as macros %}
+<center>
     <h1>Alumnos</h1>
     <form action="" method="post" novalidate>
         {{macros.render_field(form.nombre, class="form-controls")}}
@@ -13,4 +14,5 @@
     </form>
 
     <h1>Nombre: {{nom}}</h1>
+</center>
 {%endblock%}
